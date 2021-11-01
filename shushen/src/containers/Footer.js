@@ -1,10 +1,50 @@
-import React from 'react'
-import { Typography } from '@mui/material'
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import CssBaseline from "@mui/material/CssBaseline";
+import Link from "@mui/material/Link";
+import React from "react";
+import Typography from "@mui/material/Typography";
 
-export default function Footer() {
-    return (
-        <div>
-            <Typography variant='h5'>Footer</Typography>
-        </div>
-    )
+function Copyright() {
+  return (
+    <Typography variant="body2" color="text.secondary">
+      {"Copyright © "}
+      <Link color="inherit" href="https://mui.com/">
+        shushen.ca
+      </Link>{" "}
+      {new Date().getFullYear()}
+      {"."}
+    </Typography>
+  );
+}
+
+export default function StickyFooter() {
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+      }}
+    >
+      <CssBaseline />
+      <Box
+        component="footer"
+        sx={{
+          py: 3,
+          px: 2,
+          mt: "auto",
+          backgroundColor: (theme) =>
+            theme.palette.mode === "light"
+              ? theme.palette.grey[200]
+              : theme.palette.grey[800],
+        }}
+      >
+        <Container maxWidth="sm">
+          <Typography variant="body1">Shen Shu My sticky footer.</Typography>
+          <Copyright />
+        </Container>
+      </Box>
+    </Box>
+  );
 }

@@ -14,7 +14,7 @@ export default function Blog() {
         component={Link}
         to="/"
       >
-        Click me to go Blog
+        Click me to go Home
       </Button>
     </div>
   );
