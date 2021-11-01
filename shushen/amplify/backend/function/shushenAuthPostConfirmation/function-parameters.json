@@ -1,0 +1,19 @@
+{
+  "trigger": true,
+  "modules": [
+    "add-to-group",
+    "custom"
+  ],
+  "parentResource": "shushenAuth",
+  "functionName": "shushenAuthPostConfirmation",
+  "resourceName": "shushenAuthPostConfirmation",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/usr/local/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/triggers/PostConfirmation",
+  "triggerTemplate": "PostConfirmation.json.ejs",
+  "triggerEventPath": "PostConfirmation.event.json",
+  "roleName": "shushenAuthPostConfirmation",
+  "skipEdit": true,
+  "GROUP": "anyone",
+  "enableCors": false
+}

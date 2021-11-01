@@ -10,6 +10,18 @@
       "StackName": "amplify-shushen-dev-170107",
       "StackId": "arn:aws:cloudformation:us-east-2:115136774643:stack/amplify-shushen-dev-170107/d6cd5590-3b56-11ec-88e4-022c22326d1a",
       "AmplifyAppId": "d34fg7diyfu6m1"
+    },
+    "categories": {
+      "function": {
+        "shushenAuthPostConfirmation": {
+          "GROUP": "anyone",
+          "deploymentBucketName": "amplify-shushen-dev-170107-deployment",
+          "s3Key": "amplify-builds/shushenAuthPostConfirmation-467473575743746b6f6c-build.zip"
+        }
+      },
+      "auth": {
+        "shushenAuth": {}
+      }
     }
   }
 }
