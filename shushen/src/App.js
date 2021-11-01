@@ -1,5 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
+
+import logo from './logo.svg';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          This is Shen Shu Profile WebSite
         </a>
       </header>
     </div>
