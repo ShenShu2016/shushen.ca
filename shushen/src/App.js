@@ -1,26 +1,25 @@
-import './App.css';
+import "./App.css";
 
-import logo from './logo.svg';
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-function App() {
+import Blog from "./containers/Blog";
+import Home from "./containers/Home";
+
+const theme = createTheme({
+  typography: {},
+});
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          This is Shen Shu Profile WebSite
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <Router>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/blog" component={Blog} />
+          </Switch>
+        </Router>
+      </ThemeProvider>
     </div>
   );
 }
-
-export default App;
