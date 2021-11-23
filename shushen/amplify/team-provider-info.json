@@ -17,6 +17,10 @@
           "GROUP": "anyone",
           "deploymentBucketName": "amplify-shushen-dev-170107-deployment",
           "s3Key": "amplify-builds/shushenAuthPostConfirmation-467473575743746b6f6c-build.zip"
+        },
+        "shushen3b178660": {
+          "deploymentBucketName": "amplify-shushen-dev-170107-deployment",
+          "s3Key": "amplify-builds/shushen3b178660-7339476e533558513259-build.zip"
         }
       },
       "auth": {
